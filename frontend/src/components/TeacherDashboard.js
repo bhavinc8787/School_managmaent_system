@@ -1,8 +1,9 @@
+// Renamed to .jsx for JSX support
 import React, { useEffect, useState, useContext } from 'react';
-import { AuthContext } from '../context/AuthContext';
-import AssignmentForm from './AssignmentForm';
-import AssignmentList from './AssignmentList';
-import SubmissionList from './SubmissionList';
+import { AuthContext } from '../context/AuthContext.jsx';
+import AssignmentForm from './AssignmentForm.jsx';
+import AssignmentList from './AssignmentList.jsx';
+import SubmissionList from './SubmissionList.jsx';
 
 export default function TeacherDashboard() {
   const { user } = useContext(AuthContext);
